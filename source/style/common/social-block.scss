@@ -1,0 +1,23 @@
+.social-block {
+  flex: 1 0 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.social-block a {
+  display: block;
+  margin: 1rem;
+}
+
+@media (max-width: 414px) {
+  .social-block a {
+    display: block;
+    margin: .5rem;
+  }
+}
+@media (max-height: 320px) {
+  .social-block a {
+    display: block;
+    margin: .5rem;
+  }
+}

@@ -1,0 +1,36 @@
+.flip-back__wrapper
+
+  .flip-back__title-block
+    h2.flip-back__title авторизуйтесь
+
+  form(action="" class="flip-back__form")
+
+    .flip-back__login
+      .flip-back__login-icon
+        svg(class="svg-vk-dims")
+          use(xlink:href="../assets/img/sprite.svg#login" class="icon-color")
+      input(type="login" placeholder="login").flip-back__login-input
+
+    .flip-back__password
+      .flip-back__password-icon
+        svg(class="svg-vk-dims")
+          use(xlink:href="../assets/img/sprite.svg#password" class="icon-color")   
+      input(type="password" placeholder="password").flip-back__password-input
+    
+    .flip-back__checkbox
+      input(type="checkbox" name="human" id="check" value="yes")
+      label(for="check") Я человек
+
+    .span.flip-back__text Вы точно не робот?
+    
+    .flip-back__radio
+      input(type="radio" name="human" id="human1" value="yes").flip-back__radio-input
+      label(for="human1").flip-back__radio-label Да
+      input(type="radio" name="human" id="human2" value="no") 
+      label(for="human2") Не уверен    
+
+  .flip-back__navigation-block
+    .flip-back__btn 
+      a(href="./index.html" title="На главную") На главную
+    .flip-back__btn 
+      button( value="Войти").flip-back__submit Войти

@@ -1,0 +1,19 @@
+@import './about-header';
+
+.header {
+  display: flex;
+  // flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  // background: rgba(orange, .4);
+  position: relative;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background: $header-bottom-background-decoration;
+}

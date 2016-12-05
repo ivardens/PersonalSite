@@ -1,0 +1,114 @@
+.flip-back {
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.5rem 0 0 0;
+  }
+  &__title {
+    color: $flip-back_font_color;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-family: 'bernier_distressedregular';
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    width: 90%;
+  }
+  &__login,
+  &__password {
+    display: flex;
+    justify-content: center;
+    border: 0px;
+    border-radius: .3rem;
+    overflow: hidden;
+    margin: 0 0 1rem 0;
+  }
+  &__login-input,
+  &__password-input {
+    width: 100%;
+    height: 2.5rem;
+    border: 0;
+    padding: 0 1rem;
+    outline: 0;
+  }
+  &__login-icon,
+  &__password-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    background: $flip-back_icon_background;
+  }
+  &__checkbox {
+    text-align: center;
+  }
+  &__checkbox input {
+    margin: 0 .5rem 1rem 0;
+  }
+  &__text {
+    flex: 1 0 100%;
+    text-align: center;
+    color: $flip-back_font_color;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+  }
+  &__radio {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  &__radio-input {
+    margin-right: .3rem;
+  }
+  &__radio-label {
+    margin-right: 1rem;
+  }
+  &__navigation-block {
+    flex: 0 0 100%;
+    align-self: flex-end;
+    display: flex;
+    background: rgba($flip-front_btn_color, .6);
+  }
+  &__btn {
+    color: $flip-front_btn_text_color;
+    flex: 1 0 auto;
+    text-align: center;
+  }
+  &__btn:nth-child(1) {
+    border-right: 2px solid rgba($flip-front_btn_border_color, .7);
+  }
+  &__btn:first-letter {
+    text-transform: uppercase;
+  }
+  &__btn:hover {
+    background: rgba($flip-front_btn_color_hover, .5);
+    cursor: pointer;
+  }
+  &__btn a, 
+  &__btn button {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: $flip-front_btn_text_color;
+  }
+  &__submit {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    color: $flip-front_btn_text_color;
+    outline: 0;
+    margin: 0 auto;
+  }
+}
+.icon-color {
+      fill: $flip-front_social_color;
+    }
+.icon-color:hover {
+      fill: $flip-front_social_color_hover;
+    }

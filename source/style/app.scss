@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'bernier_distressedregular';
+    src: url(../fonts/bernierdistressed-regular-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+// @font-face {
+//     font-family: 'FontAwesome';
+//     src: url(../fonts/fontawesome-webfont.woff?v=4.6.3) format("woff");
+//     font-weight: normal;
+//     font-style: normal
+// }
+
+// **** begin *****
+// bacground img for differrent resolution
+.wrapper {
+  min-height: 100vh;
+  background: url("../img/bg_login_iphone.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+@media (min-width:414px) {
+  .wrapper {
+    min-height: 100vh;
+    background: url("../img/bg_login_1200.jpg") no-repeat fixed;
+    background-size: cover;
+  }
+}
+
+@media (min-width:1200px) {
+  .wrapper {
+    min-height: 100vh;
+    background: url("../img/bg_login_1800.jpg") no-repeat fixed;
+    background-size: cover;
+  }
+}
+
+// end of background img section
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+// **** end *****
+
+@import 'common/variables';
+@import 'common/png_sprite';
+@import 'common/svg_sprite';
+@import 'common/login-page';
+@import 'common/about-page';
+@import 'common/social-block';
+
+$png: 1, 2, 3, 4, 5;
+
+@each $item in $png {
+  .icon-images0#{$item} {
+    @extend .icon-images0#{$item};
+    transition: width .3s ease-in-out;
+    width: 120px;
+    height: 120px;
+    &:hover {
+      @extend .icon-images0#{$item}_2x;
+      width: 120px;
+      height: 120px;
+    }
+  }
+}

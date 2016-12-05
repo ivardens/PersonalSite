@@ -1,0 +1,46 @@
+@import './flip';
+
+.login-block {
+  flex: 0 0 100%;
+}
+
+.login-btn {
+  display: block;
+  margin: 1rem auto 1rem auto;
+  padding: .5rem 1rem;
+  border: 1px solid $login-btn_border_color;
+  border-radius: .5rem;
+  background: transparent;
+  color: $login-btn_text_color;
+  outline: 0;
+}
+
+.login-btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.login-btn:visited,
+.login-btn:active {
+  transform: scale(.9, .9);
+}
+
+.login-content {
+  flex: 1 0 100%;
+  display: flex;
+  min-height: 100%;
+}
+
+.flip-block {
+  align-self: center;
+  margin: 0 auto;
+}
+
+.copyright-block {
+  flex: 0 0 100%;
+  align-self: flex-end;
+}
+
+.copyright-text {
+  text-align: center;
+  color: rgba($copyright-text_color, .7)
+}

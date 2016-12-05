@@ -1,0 +1,20 @@
+extends ../_template
+
+block variables
+  - var title = 'Home page'
+
+block content
+
+  .wrapper
+    
+    .container
+
+      .header
+        include ../common/_about_header
+
+      .section
+        a(name="next")
+        include ../common/_about_section
+
+      .copyright-block 
+        p.copyright-text &copy Varden Adamchuk 2016  

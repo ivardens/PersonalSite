@@ -1,0 +1,64 @@
+@import './foto-block';
+.flip-front {
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__foto-block {
+    flex: 1 0 100%;
+    color: $flip-front_font_color;
+  }
+  &__name-block {
+    flex: 1 0 100%;
+  }
+  &__social-block {
+    flex: 1 0 100%;
+    text-align: center;
+    .vk-icon,
+    .github-icon,
+    .in-icon,
+    .icon-color {
+      fill: $flip-front_social_color;
+    }
+    .vk-icon:hover,
+    .github-icon:hover,
+    .in-icon:hover,
+    .icon-color:hover {
+      fill: $flip-front_social_color_hover;
+    }
+  }
+  &__navigation-block {
+    flex: 1 0 100%;
+    align-self: flex-end;
+    display: flex;
+    background: rgba($flip-front_btn_color, .6);
+  }
+  &__btn {
+    display: block;
+    color: $flip-front_btn_text_color;
+    flex: 1 0 auto;
+    text-align: center;
+  }
+  &__btn:nth-child(2) {
+    border-left: 2px solid rgba($flip-front_btn_border_color, .7);
+    border-right: 2px solid rgba($flip-front_btn_border_color, .7);
+  }
+  &__btn:first-letter {
+    text-transform: uppercase;
+  }
+  &__btn:hover {
+    background: rgba($flip-front_btn_color_hover, .5);
+    cursor: pointer;
+  }
+  &__btn a {
+    display: block;
+    text-decoration: none;
+    color: $flip-front_btn_text_color;
+    padding: 1rem;
+  }
+}
+
+.icon-box {
+  display: block;
+}

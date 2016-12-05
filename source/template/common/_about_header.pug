@@ -1,0 +1,19 @@
+.top-wrap
+  .social 
+    include ./_social_block
+  .menu menu
+
+.foto-block
+  include ./_foto_block
+  
+  svg(class="svg-about_header-dims")
+    use(xlink:href="../assets/img/sprite.svg#about_header" class="header-text-background-color")
+  a(href="#next" class="svg-about_header-link")
+    svg(class="svg-arrow_down-dims")
+      use(xlink:href="../assets/img/sprite.svg#arrow_down")
+
+.decoration-bottom
+  svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none' class="traingle")
+    polygon(points='0,0   0,86   500.8,86   500.8,75.5' class="traingle-left")
+    polygon(points='1000,0   1000,86   500,86   500,75.5' class="traingle-right")
+
