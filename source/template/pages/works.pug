@@ -1,7 +1,7 @@
 extends ../_template
 
 block variables
-  - var title = 'Blog'
+  - var title = 'Portfolio'
 
 block content
 
@@ -16,8 +16,10 @@ block content
         .header-bottom
           include ../common/_foto
             svg(class="svg-about_header-dims")
-              use(xlink:href="../assets/img/sprite.svg#blog_header" class="header-text-background-color")
-             
+              use(xlink:href="../assets/img/sprite.svg#portfolio_header" class="header-text-background-color")
+              //- use(xlink:href="../assets/img/sprite.svg#works_header" class="header-text-background-color")
+              //- use(xlink:href="../assets/img/sprite.svg#portfolio_header" class="header-text-background-color")
+            
             .arrow-down
               a(href="#next" class="svg-about_header-link")
                 svg(class="svg-arrow_down-dims")
@@ -25,16 +27,12 @@ block content
         
             svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none' class="traingle")
               polygon(points='0,0   0,86   500.8,86   500.8,75.5' class="traingle-left")
-              polygon(points='1000,0   1000,86   500,86   500,75.5' class="traingle-right")
+              polygon(points='1000,0   1000,86   500,86   500,75.5' class="traingle-left")
 
-
-
-
-      .section.blog-section
+      .section.work-section
         a(name="next")
-        include ../common/_blog_section
+        include ../common/_works_section
 
-      
       .footer
         
           include ../common/_footer

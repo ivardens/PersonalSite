@@ -7,11 +7,29 @@ $flip-front_btn_text_color : #ffffff;
 $flip-front_btn_color: #00bfa5;
 $flip-front_btn_color_hover : #009688;
 
-$flip-front_social_color: #00bfa5;
-$flip-front_social_color_hover : #009688;
+$text_about_map_info_color : #455a64;
 
-$header_social_color: #ffffff;
+
+
+$header_social_color: rgba(149,184,184, .7);
 $header_social_color_hover : #ffffff;
+
+  $social-top-color : rgba(white, .7);
+  $social-top-color_hover : #ffffff;
+  $foto-text-color : #ffffff;
+  $header-arrow-down-color_hover : white;
+  $header-traingel-left-color: #efeee9;
+  $header-traingel-right-color: #eeebdf;
+  $flip-front_social_color: #00bfa5;
+  $flip-front_social_color_hover : #009688;
+
+  // Hamburger menu
+  $color-hamburger: rgba(white, .7);
+  $color-main: #009688;
+  $color-active: #FFF;
+  $color-link: #FFF;
+  $button-height: 27px;
+  $button-width: 35px;
 
 $flip-back_font_color : #455a64;
 $flip-background_color : #ffffff;
@@ -25,3 +43,6 @@ $copyright-text_color : #ffffff;
 $header-bottom-background-decoration: #efeee9;
 $header-text-background-color: #ffffff;
 $header-text-background-color_hover: #ffffff;
+
+$footer-color-fonts: rgba(white, .7);
+$footer-color-fonts_hover: #ffffff;

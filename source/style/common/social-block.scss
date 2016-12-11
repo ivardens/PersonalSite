@@ -1,22 +1,31 @@
-.social-block {
-  flex: 1 0 100%;
-  display: flex;
-  justify-content: center;
+.social-wrapper {
+  padding-left: 0;
 }
 
-.social-block a {
-  display: block;
-  margin: 1rem;
+.social-flip {
+  padding-left: 0;
+  &-link {
+    display: inline-block;
+    list-style: none;
+    width: 3rem;
+    height: 3rem;
+    z-index: 1;
+  }
+}
+
+.svg-github-dims {
+  margin-bottom: -2px;
 }
 
 @media (max-width: 414px) {
-  .social-block a {
+  .social-flip a {
     display: block;
     margin: .5rem;
   }
 }
-@media (max-height: 320px) {
-  .social-block a {
+
+@media (orientation:landscape) {
+  .social-flip a {
     display: block;
     margin: .5rem;
   }

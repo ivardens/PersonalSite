@@ -16,6 +16,8 @@ html
 
     link(rel='stylesheet' href='/assets/css/foundation.css')
     link(rel='stylesheet' href='/assets/css/app.css')
+    link(href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet")
+
     script(src='/assets/js/foundation.js' defer)
     script(src='/assets/js/app.js' defer)
 
@@ -25,3 +27,20 @@ html
 
   body
     block content
+
+    script.
+      function initMap() {
+      var uluru = {lat: 49.230645, lng: -123.010367};
+      var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      scrollwheel: false,
+      draggable: false,
+      center: uluru
+      });
+      var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+      });
+      }
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAw0UoLZKCR6RXLa22GntsEQJEq2VYi-Qk&signed_in=true&callback=initMap')
+

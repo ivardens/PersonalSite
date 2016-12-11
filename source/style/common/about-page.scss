@@ -1,19 +1,33 @@
-@import './about-header';
-
-.header {
-  display: flex;
-  // flex-wrap: wrap;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
-  // background: rgba(orange, .4);
-  position: relative;
+.contact-form {
+  position: absolute;
+  font-size: .9rem;
+  top: 25%;
+  left: 50%;
+  padding: 0 20px 20px 20px;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  background-color: rgba(white, .8);
+  box-shadow: 0px 0px 33px -2px rgba(0,0,0,0.75);
+  
+  &__title {
+    font-size: 1.2rem;
+    text-align: center;
+    color: $text_about_map_info_color;
+  }
+  &__list {
+    padding-left: 0;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    color: $text_about_map_info_color;
+    margin-bottom: .5rem;
+  }
+  &__text {
+    margin-left: .5rem;
+  }
+  & svg {
+    fill: $text_about_map_info_color;
+  }
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
-  background: $header-bottom-background-decoration;
-}

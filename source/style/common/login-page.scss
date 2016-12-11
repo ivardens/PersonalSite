@@ -1,7 +1,16 @@
 @import './flip';
-
 .login-block {
   flex: 0 0 100%;
+  align-self: flex-end;
+  margin-right: 1rem;
+}
+
+@media (max-width: 414px) {
+  .login-block {
+    flex: 0 0 100%;
+    align-self: center;
+    margin-right: 1rem;
+  }
 }
 
 .login-btn {
@@ -35,12 +44,12 @@
   margin: 0 auto;
 }
 
-.copyright-block {
-  flex: 0 0 100%;
+.login-copyright {
+  width: 100%;
   align-self: flex-end;
 }
 
-.copyright-text {
+.login-copyright-text {
   text-align: center;
   color: rgba($copyright-text_color, .7)
 }

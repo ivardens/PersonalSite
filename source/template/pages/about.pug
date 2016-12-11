@@ -1,7 +1,7 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+  - var title = 'About me'
 
 block content
 
@@ -10,11 +10,57 @@ block content
     .container
 
       .header
-        include ../common/_about_header
+        .header-top
+          include ../common/_social_top
+          include ../common/_menu_top
+        .header-bottom
+          include ../common/_foto
+            svg(class="svg-about_header-dims")
+              use(xlink:href="../assets/img/sprite.svg#about_header" class="header-text-background-color")
+              //- use(xlink:href="../assets/img/sprite.svg#works_header" class="header-text-background-color")
+              //- use(xlink:href="../assets/img/sprite.svg#portfolio_header" class="header-text-background-color")
+            
+            .arrow-down
+              a(href="#next" class="svg-about_header-link")
+                svg(class="svg-arrow_down-dims")
+                  use(xlink:href="../assets/img/sprite.svg#arrow_down")
+        
+            svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none' class="traingle")
+              polygon(points='0,0   0,86   500.8,86   500.8,75.5' class="traingle-left")
+              polygon(points='1000,0   1000,86   500,86   500,75.5' class="traingle-right")
+
+
+
 
       .section
         a(name="next")
         include ../common/_about_section
 
-      .copyright-block 
-        p.copyright-text &copy Varden Adamchuk 2016  
+      
+      .footer
+        .map
+          div#map
+
+          .contact-form
+            
+              h2.contact-form__title - Контакты -
+              ul.contact-form__list
+                li.contact-form__item.skype 
+                  svg(class="svg-skype-dims")
+                    use(xlink:href="../assets/img/sprite.svg#skype" class="header-text-background-color")
+                  span.contact-form__text varden-adams
+                li.contact-form__item.mail 
+                  svg(class="svg-envelope-dims")
+                    use(xlink:href="../assets/img/sprite.svg#envelope" class="header-text-background-color")
+                  span.contact-form__text varden.adams@gmail.com
+                li.contact-form__item.phone 
+                  svg(class="svg-phone-dims")
+                    use(xlink:href="../assets/img/sprite.svg#phone" class="header-text-background-color")
+                  span.contact-form__text +1 604 3602807
+                li.contact-form__item.addres 
+                  svg(class="svg-map_marker-dims")
+                    use(xlink:href="../assets/img/sprite.svg#map_marker" class="header-text-background-color")
+                  span.contact-form__text Burnaby, BC, Canada
+
+        
+          include ../common/_footer

@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  &-top {
+    flex: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    min-height: 3rem;
+  }
+  &-bottom {
+    flex: 1;
+    position: relative;
+    width: 100%;
+  }
+  & .traingle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  & .traingle-left {
+    fill: $header-traingel-left-color;
+    
+  }
+  & .traingle-right {
+    fill: $header-traingel-right-color;
+  }
+  & .arrow-down {
+    z-index: 99;
+    position: absolute;
+    bottom: 10%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    right: 50%;
+    transform: translateX(50%);
+    & a {
+      display: block;
+      align-self: center;
+      padding: 2rem;
+    }
+    & a:hover svg {
+      fill: $header-arrow-down-color_hover;
+    }
+    & .svg-arrow_down-dims {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      padding: .3rem;
+      margin: auto;
+      z-index: 2;
+    }
+    & .svg-arrow_down-dims:hover {
+      border: 3px solid rgba(white, .7);
+    }
+    & .svg-about_header-dims use {
+      fill: rgba($header-text-background-color, .3);
+    }
+    & .svg-about_header-link {
+      fill: rgba($header-text-background-color, .6);
+    }
+    & .svg-about_header-link:hover {
+      fill: rgba($header-text-background-color_hover, .8);
+    }
+  }
+}
+
+.section {
+  flex: 1;
+  min-height: 100%;
+  background: ghostwhite;
+  position: relative;
+}
+
+.footer {
+  min-height: 5rem;
+  // background: dodgerblue;
+  position: relative;
+}
+
+// big background img in the middle section
+.svg-about_header-dims {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  & use {
+    fill: rgba(white, .3);
+  }
+}
