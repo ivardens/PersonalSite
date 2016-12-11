@@ -23,12 +23,18 @@ Getting started:
 4. npm install
 5. run "gulp" command to start
 
-echo "# portfolio" >> README.md
+…or create a new repository on the command line
+
+echo "# PersonalSite" >> README.md
 git init
-git add README.md 
-git commit -m "first commit" 
+git add README.md
+git commit -m "first commit"
 git remote add origin https://github.com/ivarden/PersonalSite.git
-git push -u origin master 
+git push -u origin master
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/ivarden/PersonalSite.git
+git push -u origin master
 ```
 
 Version for testing : http://
