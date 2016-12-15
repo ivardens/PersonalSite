@@ -2,11 +2,13 @@
   &-wrapper {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    // position: absolute;
     bottom: 0px;
     width: 100%;
     background: black;
     opacity: .7;
+    overflow: hidden;
+    clear: both;
   }
   &-top {
     display: flex;
@@ -72,6 +74,10 @@
     text-decoration: none;
     color: $footer-color-fonts;
     text-align: center;
+    padding: .5rem 0;
+  }
+  .footer-nav__list {
+    flex-direction: column;
   }
   .footer-top {
     display: flex;
@@ -86,7 +92,6 @@
   }
   .footer-social {
     display: flex;
-    ;
     justify-content: center;
   }
 }

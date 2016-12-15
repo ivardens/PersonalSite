@@ -1,12 +1,11 @@
 .button_container {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
+  position: relative;
   height: $button-height;
   width: $button-width;
   cursor: pointer;
-  z-index: 151;
+  z-index: 121;
   transition: opacity .25s ease;
+  // background: red;
   &:hover span{
     background: $color-active;
   }
@@ -30,8 +29,8 @@
     height: 5px;
     width: 100%;
     position: absolute;
-    top: 0px;
-    left: 0;
+    top: 0;
+    right: 0;
     transition: all .35s ease;
     cursor: pointer;
     &:nth-of-type(2) {
@@ -52,7 +51,7 @@
   opacity: 1;
   visibility: hidden;
   transition: opacity .35s, visibility .35s, width .35s;
-  z-index: 150;
+  z-index: 100;
   &:before {
     content: '';
     background: $color-main;

@@ -1,2 +1,112 @@
-.works-title
-  h2 - Blog -
+//- .works-title
+//-   h2 - Blog -
+
+
+aside.blog-titles
+  ul.blog-titles__list
+    .blog-titles__circle
+    
+    li.blog-titles__item.blog-titles__active 
+      a(href="#1").blog-titles__link Самое важное в SASS
+      span.blog-titles__decor
+    
+    li.blog-titles__item
+      a(href="#2").blog-titles__link Приёмы в вёрстке, без которых не обходится ни один сайт
+      span.blog-titles__decor
+    
+    li.blog-titles__item 
+      a(href="#3").blog-titles__link Почему я выбрал Jade
+      span.blog-titles__decor
+    
+    li.blog-titles__item
+      a(href="#1").blog-titles__link Самое важное в SASS
+      span.blog-titles__decor
+    
+    li.blog-titles__item
+      a(href="#2").blog-titles__link Приёмы в вёрстке, без которых не обходится ни один сайт
+      span.blog-titles__decor
+    
+    li.blog-titles__item 
+      a(href="#3").blog-titles__link Почему я выбрал Jade
+      span.blog-titles__decor
+
+    li.blog-titles__item
+      a(href="#1").blog-titles__link Самое важное в SASS
+      span.blog-titles__decor
+    
+    li.blog-titles__item
+      a(href="#2").blog-titles__link Приёмы в вёрстке, без которых не обходится ни один сайт
+      span.blog-titles__decor
+    
+    li.blog-titles__item 
+      a(href="#3").blog-titles__link Почему я выбрал Jade
+      span.blog-titles__decor
+    
+    
+
+section.blog-articles
+  .blog-article
+    .blog-article__title
+        h2(id="1") Самое важное в SASS
+    .blog-article__info
+        | 22 июня 2016
+    .blog-article__text
+        p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+        p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+    .blog-article__bottom
+
+  .blog-article
+    .blog-article__title
+      h2(id="2") Приёмы в вёрстке, без которых не обходится ни один сайт
+    .blog-article__info
+      | 22 июля 2016
+    .blog-article__text
+      p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+      p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+    .blog-article__bottom
+  
+  .blog-article
+    .blog-article__title
+      h2(id="3") Почему я выбрал Jade
+    .blog-article__info
+      | 22 июля 2016
+    .blog-article__text
+      <ul>
+        <li>работает на клиентской стороне</li>
+        <li>отличная читабельность</li>
+        <li>гибкая система отступов</li>
+        <li>раскрытие блоков</li>
+        <li>примеси</li>
+        <li>статические инклюды</li>
+        <li>интерполяция в аттрибутах</li>
+        <li>из соображений безопасности по умолчанию все экранируется</li>
+        <li>контекстные сообщения об ошибках как во время компиляции так и во время выполнения</li>
+        <li>утилита для компиляции jade в html из командной строки</li>
+        <li>режим HTML5 (используйте doctype <em>!!! 5</em>)</li>
+        <li>кеширование в памяти (опционально)</li>
+        <li>комбинирование динамических и статических CSS-классов</li>
+        <li>манипуляции с деревом парсинга через <em>filters</em></li>
+        <li>поддержка <a href="http://express-js.ru">Express JS</a> “из коробки”</li>
+        <li>прозрачный механизм итерации по объектам, массивам, и даже неисчислимым типам через <code class="highlighter-rouge">each</code></li>
+        <li>блочные комментарии</li>
+        <li>фильтры AST</li>
+        <li>фильтры
+          <ul>
+            <li>:sass - нужно установить <a href="http://github.com/visionmedia/sass.js">sass.js</a></li>
+            <li>:less - нужно установить <a href="http://github.com/cloudhead/less.js">less.js</a></li>
+            <li>:markdown - нужно установить <a href="http://github.com/evilstreak/markdown-js">markdown-js</a> или <a href="http://github.com/visionmedia/node-discount">node-discount</a></li>
+            <li>:cdata</li>
+            <li>:coffeescript - нужно установить <a href="http://jashkenas.github.com/coffee-script/">coffee-script</a></li>
+          </ul>
+        </li>
+        <li><a href="https://github.com/digitaltoad/vim-jade">подсветка синтаксиса для Vim</a></li>
+        <li><a href="http://github.com/miksago/jade-tmbundle">TextMate Bundle</a></li>
+        <li><a href="http://tjholowaychuk.com/post/1004255394/jade-screencast-template-engine-for-nodejs">скринкасты</a></li>
+        <li><a href="https://github.com/donpark/html2jade">html2jade конвертер</a></li>
+      </ul>
+    .blog-article__bottom
+
+    a(href="#next").totop To the top
+
+  
+  

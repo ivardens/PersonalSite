@@ -1,0 +1,108 @@
+.blog-section {
+  display: flex;
+  background: $header-traingel-left-color;
+  padding: 0 .5rem 1rem;
+
+  & .blog-titles {
+    flex: 0 0 30%;
+    padding-right: 1rem;
+    z-index: 100;
+
+    &__list{
+      padding-left: 0;
+      
+    }
+    &__item {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      
+    }
+    &__link {
+      flex: 1;
+      text-decoration: none;
+      color: black;
+      text-align: right;
+      padding: .5rem 0 ;
+    }
+    
+    &__item:hover .blog-titles__link {
+      color: #0e9288;
+    }
+    &__decor {
+      margin-left: .5rem;
+      min-width: 3px;
+      background-color: transparent;
+    }
+    &__active .blog-titles__decor {
+      margin-left: .5rem;
+      min-width: 3px;
+      background-color: #0e9288;
+    }
+  }
+  & .blog-articles {
+    flex: 1 0 70%;
+  }
+
+  & .traingle-left {
+    fill: $header-traingel-left-color;
+  }
+  & .traingle-right {
+    fill: $header-traingel-left-color;
+  }
+  & .works-title {
+    flex: 1 0 100%;
+    height: auto;
+  }
+}
+
+  @media (max-width: 768px) {
+  .blog-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-titles__list {
+    position: fixed;
+    overflow:scroll;
+    left: -2000%;
+    top: 30%;
+    background: rgba(white, 1);
+    height: 50%;
+  }
+  .blog-titles__circle {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: rgba(orange, .7);
+    top: 30%;
+    left: -1rem;
+    z-index: 9999999;
+    overflow: hidden;
+  }
+  .blog-titles__list:hover  {
+    position: fixed;
+    left: 0;
+    top: 30%;
+    & .blog-titles__circle {
+      z-index: 9999999;
+      left: -1rem;
+      top: 28%;
+      background: rgba(#0e9288, .5);
+    }
+  }
+
+  @media (orientation: landscape) {
+    .blog-section {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.blog-titles__item a:active .blog-titles__decor {
+  margin-left: .5rem;
+  min-width: 3px;
+  background-color: #0e9288;
+}
+
