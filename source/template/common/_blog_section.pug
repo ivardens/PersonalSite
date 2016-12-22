@@ -3,49 +3,25 @@
 
 
 aside.blog-titles
-  ul.blog-titles__list
-    .blog-titles__circle
-    
-    li.blog-titles__item.blog-titles__active 
-      a(href="#1").blog-titles__link Самое важное в SASS
-      span.blog-titles__decor
-    
-    li.blog-titles__item
-      a(href="#2").blog-titles__link Приёмы в вёрстке, без которых не обходится ни один сайт
-      span.blog-titles__decor
-    
-    li.blog-titles__item 
-      a(href="#3").blog-titles__link Почему я выбрал Jade
-      span.blog-titles__decor
-    
-    li.blog-titles__item
-      a(href="#1").blog-titles__link Самое важное в SASS
-      span.blog-titles__decor
-    
-    li.blog-titles__item
-      a(href="#2").blog-titles__link Приёмы в вёрстке, без которых не обходится ни один сайт
-      span.blog-titles__decor
-    
-    li.blog-titles__item 
-      a(href="#3").blog-titles__link Почему я выбрал Jade
-      span.blog-titles__decor
+  .blog-titles__wrap
+    ul.blog-titles__list
+      
+      li.blog-titles__item.blog-titles__active Самое важное в SASS
+        //- a(href="#1").blog-titles__link Самое важное в SASS
+      
+      li.blog-titles__item Приёмы в вёрстке, без которых не обходится ни один сайт
+        //- a(href="#2").blog-titles__link Приёмы в вёрстке, без которых не обходится ни один сайт
+      
+      li.blog-titles__item Почему я выбрал Jade
+        //- a(href="#3").blog-titles__link Почему я выбрал Jade
 
-    li.blog-titles__item
-      a(href="#1").blog-titles__link Самое важное в SASS
-      span.blog-titles__decor
-    
-    li.blog-titles__item
-      a(href="#2").blog-titles__link Приёмы в вёрстке, без которых не обходится ни один сайт
-      span.blog-titles__decor
-    
-    li.blog-titles__item 
-      a(href="#3").blog-titles__link Почему я выбрал Jade
-      span.blog-titles__decor
-    
-    
+      li.blog-titles__item Приёмы в вёрстке, без которых не обходится ни один сайт
+        //- a(href="#4").blog-titles__link Приёмы в вёрстке, без которых не обходится ни один сайт
+      
+      .blog-titles__circle
 
-section.blog-articles
-  .blog-article
+main.blog-articles
+  article.blog-article
     .blog-article__title
         h2(id="1") Самое важное в SASS
     .blog-article__info
@@ -55,7 +31,7 @@ section.blog-articles
         p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
     .blog-article__bottom
 
-  .blog-article
+  article.blog-article
     .blog-article__title
       h2(id="2") Приёмы в вёрстке, без которых не обходится ни один сайт
     .blog-article__info
@@ -65,7 +41,7 @@ section.blog-articles
       p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
     .blog-article__bottom
   
-  .blog-article
+  article.blog-article
     .blog-article__title
       h2(id="3") Почему я выбрал Jade
     .blog-article__info
@@ -95,8 +71,6 @@ section.blog-articles
             <li>:sass - нужно установить <a href="http://github.com/visionmedia/sass.js">sass.js</a></li>
             <li>:less - нужно установить <a href="http://github.com/cloudhead/less.js">less.js</a></li>
             <li>:markdown - нужно установить <a href="http://github.com/evilstreak/markdown-js">markdown-js</a> или <a href="http://github.com/visionmedia/node-discount">node-discount</a></li>
-            <li>:cdata</li>
-            <li>:coffeescript - нужно установить <a href="http://jashkenas.github.com/coffee-script/">coffee-script</a></li>
           </ul>
         </li>
         <li><a href="https://github.com/digitaltoad/vim-jade">подсветка синтаксиса для Vim</a></li>
@@ -106,7 +80,16 @@ section.blog-articles
       </ul>
     .blog-article__bottom
 
-    a(href="#next").totop To the top
 
+  article.blog-article
+    .blog-article__title
+      h2(id="4") Приёмы в вёрстке, без которых не обходится ни один сайт
+    .blog-article__info
+      | 22 июля 2016
+    .blog-article__text
+      p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+      p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+    .blog-article__bottom
   
   
+  a(href="#next").totop To the top

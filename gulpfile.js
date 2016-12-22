@@ -11,11 +11,14 @@ global.$ = {
   },
   gulp: require('gulp'),
   del: require('del'),
+  browserify : require('browserify'),
   browserSync: require('browser-sync').create(),
   gp: require('gulp-load-plugins')(),
   merge: require('merge-stream'),
   spritesmith: require('gulp.spritesmith'),
-  buffer: require('vinyl-buffer')
+  buffer: require('vinyl-buffer'),
+  source : require('vinyl-source-stream'),
+  babel : require('babelify')
 };
 
 $.path.task.forEach(function (taskPath) {

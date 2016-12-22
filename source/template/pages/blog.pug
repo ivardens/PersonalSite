@@ -9,7 +9,7 @@ block content
     
     .container
 
-      .header
+      header.header
         .header-top
           include ../common/_social_top
           include ../common/_menu_top
@@ -25,11 +25,11 @@ block content
         
             svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none' class="traingle")
               polygon(points='0,0   0,86   500.8,86   500.8,75.5' class="traingle-left")
-              polygon(points='1000,0   1000,86   500,86   500,75.5' class="traingle-right")
+              polygon(points='1000,0   1000,86   500,86   500,75.5' class="traingle-left")
 
 
-      .section.blog-section#next
+      section.section.blog-section#next
         include ../common/_blog_section
       
-      .footer
+      footer.footer
         include ../common/_footer

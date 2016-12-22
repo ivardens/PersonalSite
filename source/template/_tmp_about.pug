@@ -14,17 +14,36 @@ html
     //- favicon block start
     //- favicon block end
 
-    link(rel='stylesheet' href='./assets/css/foundation.css')
+    //- link(rel='stylesheet' href='./assets/css/foundation.css')
     link(rel='stylesheet' href='./assets/css/app.css')
     link(href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet")
 
-    script(src='./assets/js/foundation.js' defer)
+    //- script(src='./assets/js/foundation.js' defer)
     script(src='./assets/js/app.js' defer)
 
     <!--[if lt IE 9]>
     script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
     <![endif]-->
-    block scripts
 
+    script.
+      function initMap() {
+      var uluru = {lat: 49.230645, lng: -123.010367};
+      var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      scrollwheel: false,
+      draggable: false,
+      center: uluru
+      });
+      var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+      });
+      }
+    
+    script(src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAw0UoLZKCR6RXLa22GntsEQJEq2VYi-Qk" async defer)
+    
   body
     block content
+    
+    
+

@@ -1,8 +1,9 @@
-extends ../_template
+extends ../_tmp_about
 
 block variables
   - var title = 'About me'
 
+  
 block content
 
   .wrapper
@@ -17,8 +18,6 @@ block content
           include ../common/_foto
             svg(class="svg-about_header-dims")
               use(xlink:href="./assets/img/sprite.svg#about_header" class="header-text-background-color")
-              //- use(xlink:href="./assets/img/sprite.svg#works_header" class="header-text-background-color")
-              //- use(xlink:href="./assets/img/sprite.svg#portfolio_header" class="header-text-background-color")
             
             .arrow-down
               a(href="#next" class="svg-about_header-link")
@@ -41,7 +40,6 @@ block content
           div#map
 
           .contact-form
-            
               h2.contact-form__title - Контакты -
               ul.contact-form__list
                 li.contact-form__item.skype 

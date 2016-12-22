@@ -1,13 +1,28 @@
 .work-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
   background: $header-traingel-left-color;
-}
-.works-title {
-  text-align: center;
-  text-transform: uppercase;
-  background: $header-traingel-left-color;
-  min-height: 4rem;
 }
 
+// .works-title {
+//   text-align: center;
+//   text-transform: uppercase;
+//   background: $header-traingel-left-color;
+//   min-height: 4rem;
+// }
 .footer {
+  position: relative;
   background: $header-traingel-left-color;
+  @media(max-width: 1024px) {
+    .footer {
+      position: relative;
+    }
+    @media(orientation: landscape) {
+      .footer {
+        position: relative;
+      }
+    }
+  }
 }

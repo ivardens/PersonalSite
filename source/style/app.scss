@@ -61,7 +61,6 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  // background: red;
 }
 // **** end *****
 
@@ -79,7 +78,7 @@ body {
 @import './common/about-section';
 @import './common/blog-section';
 @import './common/social-block';
-
+@import './common/slider';
 
 @import './common/social-top';
 @import './common/foto';

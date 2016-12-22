@@ -17,8 +17,6 @@ block content
           include ../common/_foto
             svg(class="svg-about_header-dims")
               use(xlink:href="./assets/img/sprite.svg#portfolio_header" class="header-text-background-color")
-              //- use(xlink:href="./assets/img/sprite.svg#works_header" class="header-text-background-color")
-              //- use(xlink:href="./assets/img/sprite.svg#portfolio_header" class="header-text-background-color")
             
             .arrow-down
               a(href="#next" class="svg-about_header-link")
@@ -32,6 +30,7 @@ block content
       .section.work-section#next
         include ../common/_works_section
 
+        //- include ../common/_slider
+
       .footer
-        
-          include ../common/_footer
+        include ../common/_footer

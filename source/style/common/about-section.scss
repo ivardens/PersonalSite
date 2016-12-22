@@ -91,6 +91,9 @@
 }
 
 @media (max-width:768px) {
+  .header .traingle-right {
+    fill: $header-traingel-left-color;
+  }
   .about-section {
     display: flex;
     flex-direction: column;

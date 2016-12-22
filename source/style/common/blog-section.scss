@@ -2,48 +2,43 @@
   display: flex;
   background: $header-traingel-left-color;
   padding: 0 .5rem 1rem;
-
+  min-height: 100vh;
   & .blog-titles {
     flex: 0 0 30%;
     padding-right: 1rem;
     z-index: 100;
-
-    &__list{
+    &__list {
       padding-left: 0;
-      
+      padding-right: .5rem;
     }
     &__item {
-      display: flex;
-      justify-content: flex-end;
+      // display: flex;
+      // justify-content: flex-end;
       list-style: none;
-      
-    }
-    &__link {
-      flex: 1;
-      text-decoration: none;
       color: black;
       text-align: right;
-      padding: .5rem 0 ;
+      padding: .5rem 0;
+      cursor: pointer;
     }
-    
-    &__item:hover .blog-titles__link {
+    // &__link {
+    //   flex: 1;
+    //   text-decoration: none;
+    //   color: black;
+    //   text-align: right;
+    //   padding: .5rem 0;
+    //   cursor: pointer;
+    // }
+    &__item:hover {
       color: #0e9288;
     }
-    &__decor {
-      margin-left: .5rem;
-      min-width: 3px;
-      background-color: transparent;
-    }
-    &__active .blog-titles__decor {
-      margin-left: .5rem;
-      min-width: 3px;
-      background-color: #0e9288;
+    &__active {
+      padding-right: .5rem;
+      border-right: 3px solid #0e9288;
     }
   }
   & .blog-articles {
     flex: 1 0 70%;
   }
-
   & .traingle-left {
     fill: $header-traingel-left-color;
   }
@@ -56,18 +51,19 @@
   }
 }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
   .blog-section {
     display: flex;
     flex-direction: column;
   }
   .blog-titles__list {
     position: fixed;
-    overflow:scroll;
+    overflow: scroll;
     left: -2000%;
     top: 30%;
     background: rgba(white, 1);
     height: 50%;
+    padding-right: 1rem;
   }
   .blog-titles__circle {
     position: fixed;
@@ -80,7 +76,7 @@
     z-index: 9999999;
     overflow: hidden;
   }
-  .blog-titles__list:hover  {
+  .blog-titles__list:hover {
     position: fixed;
     left: 0;
     top: 30%;
@@ -91,7 +87,6 @@
       background: rgba(#0e9288, .5);
     }
   }
-
   @media (orientation: landscape) {
     .blog-section {
       display: flex;
@@ -99,10 +94,12 @@
     }
   }
 }
-
-.blog-titles__item a:active .blog-titles__decor {
-  margin-left: .5rem;
-  min-width: 3px;
-  background-color: #0e9288;
+.blog-titles__wrap.fixed {
+  left: 0;
+  width: 30%;
+  padding: 0 1rem 0 0;
 }
-
+.fixed {
+  position: fixed;
+  top: 0;
+}
