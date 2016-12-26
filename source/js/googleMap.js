@@ -1,5 +1,6 @@
 export default () => (
-  function initMap() {
+  function() {
+    console.log('1111111111222223333');
     var uluru = {
       lat: 49.230645,
       lng: -123.010367
@@ -14,7 +15,7 @@ export default () => (
       position: uluru,
       map: map
     });
-  }
+  }()
 )
 
 

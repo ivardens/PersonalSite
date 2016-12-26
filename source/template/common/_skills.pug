@@ -1,0 +1,17 @@
+-
+	var skills = {
+	  'Frontend' : {'HTML5 JADE vs Pug' : 80, 'CSS3 SCSS PostCSS' : 70, 'JavaScript jQuery' : 60, 'React Redux' : 50},
+	  'Backend' : {'Node.js & npm' : 50, 'Mongo.db' : 30, 'PHP' : 20, 'mySQL' : 20},
+	  'Workflow' : {'Git' : 60, 'Gulp' : 60, 'Webpack' : 50, 'Bower' : 50, 'Heroku' : 50}
+	}
+	
+each skill__list, skill__title in skills
+	section.m-skills
+		h3.m-title.m-title_3 #{skill__title}
+		ul.m-skills__list
+			each level, skill__title in skill__list
+				li.m-skills__item
+					span.m-skills__title #{skill__title}
+					svg.m-graph
+						circle.m-graph__canvas
+						circle(class='m-graph__progress m-graph__progress_'+level)
