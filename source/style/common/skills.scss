@@ -1,14 +1,12 @@
-.m {
-  &-skills {
-    margin: 0 0 40px 0;
-  }
-  &-skills__list {
+.skills {
+  margin: 0 0 40px 0;
+  &__list {
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
   }
-  &-skills__item {
+  &__item {
     display: inline-block;
     position: relative;
     padding: 0;
@@ -16,7 +14,7 @@
     height: 110px;
     text-align: center;
   }
-  &-skills__title {
+  &__title {
     display: block;
     position: absolute;
     top: 50%;
@@ -29,67 +27,87 @@
     font-weight: 500;
     text-align: center;
   }
-  &-graph {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    height: 100%;
-    width: 100%;
-    viewBox: 0 0 110 110;
-  }
-  &-graph__canvas {
-    cx: 55;
-    cy: 55;
-    r: 45;
-    stroke: #dfdcd5;
-    stroke-width: 15;
-    fill: transparent;
-  }
-  &-graph__progress {
-    cx: 55;
-    cy: 55;
-    r: 45;
-    stroke: #1bb696;
-    stroke-width: 15;
-    fill: transparent;
-  }
-  &-graph__progress_0 {
-    stroke-dasharray: 0 282.6;
-  }
-  &-graph__progress_10 {
-    stroke-dasharray: 28.26 282.6;
-  }
-  &-graph__progress_20 {
-    stroke-dasharray: 56.52 282.6;
-  }
-  &-graph__progress_30 {
-    stroke-dasharray: 84.78 282.6;
-  }
-  &-graph__progress_40 {
-    stroke-dasharray: 113.04 282.6;
-  }
-  &-graph__progress_50 {
-    stroke-dasharray: 141.3 282.6;
-  }
-  &-graph__progress_60 {
-    stroke-dasharray: 169.56 282.6;
-  }
-  &-graph__progress_70 {
-    stroke-dasharray: 197.82 282.6;
-  }
-  &-graph__progress_80 {
-    stroke-dasharray: 226.08 282.6;
-  }
-  &-graph__progress_90 {
-    stroke-dasharray: 254.34 282.6;
-  }
-  &-graph__progress_100 {
-    stroke-dasharray: 282.6 282.6;
-  }
-  &-title_3 {
+  &__title_h3 {
     font-size: 2rem;
     font-weight: 500;
     color: #474b57;
     margin: 0 0 20px 0;
     text-align: center;
+  }
+  &__circles {
+    fill: none;
+    stroke-width: 15;
+    cursor: pointer;
+  }
+  &__circle-first {
+    stroke: #dfdcd5;
+  }
+  &__circle-second {
+    stroke: #1bb696;
+    stroke-dasharray: .001 282.5;
+    transition: all 1s;
+  }
+  &__circle-0 {
+    stroke-dasharray: 0 282.6;
+  }
+  &__circle-5 {
+    stroke-dasharray: 14.13 282.6;
+  }
+  &__circle-10 {
+    stroke-dasharray: 28.26 282.6;
+  }
+  &__circle-15 {
+    stroke-dasharray: 42.39 282.6;
+  }
+  &__circle-20 {
+    stroke-dasharray: 56.52 282.6;
+  }
+  &__circle-25 {
+    stroke-dasharray: 70.65 282.6;
+  }
+  &__circle-30 {
+    stroke-dasharray: 84.78 282.6;
+  }
+  &__circle-35 {
+    stroke-dasharray: 98.91 282.6;
+  }
+  &__circle-40 {
+    stroke-dasharray: 113.04 282.6;
+  }
+  &__circle-45 {
+    stroke-dasharray: 127.17 282.6;
+  }
+  &__circle-50 {
+    stroke-dasharray: 141.3 282.6;
+  }
+  &__circle-55 {
+    stroke-dasharray: 155.43 282.6;
+  }
+  &__circle-60 {
+    stroke-dasharray: 169.56 282.6;
+  }
+  &__circle-65 {
+    stroke-dasharray: 183.69 282.6;
+  }
+  &__circle-70 {
+    stroke-dasharray: 197.82 282.6;
+  }
+  &__circle-75 {
+    stroke-dasharray: 211.95 282.6;
+  }
+  &__circle-80 {
+    stroke-dasharray: 226.08 282.6;
+  }
+  &__circle-85 {
+    stroke-dasharray: 240.21 282.6;
+  }
+  &__circle-90 {
+    stroke-dasharray: 254.34 282.6;
+  }
+  &__circle-95 {
+    stroke-dasharray: 268.47 282.6;
+  }
+  &__circle-100 {
+    stroke-dasharray: 282.6 282.6;
   }
 }

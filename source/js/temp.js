@@ -19,37 +19,48 @@
 //   }
 // }
 
-// function initMap() {
-//     var map = new google.maps.Map(document.getElementById('map'), {
-//         zoom: 12,
-//         draggable: false,
-//         center: {
-//             lat: 49.230645,
-//             lng: -123.010367
-//         }
-//     });
-//     var marker = new google.maps.Marker({
-//         map: map,
-//         // Define the place with a location, and a query string.
-//         place: {
-//             location: {
-//                 lat: 49.230645,
-//                 lng: -123.010367
-//             },
-//             query: 'Me, Burnaby, Canada'
-//         },
-//         // Attributions help users find your site again.
-//         attribution: {
-//             source: 'Google Maps JavaScript API',
-//             webUrl: 'https://developers.google.com/maps/'
-//         }
-//     });
-//     // Construct a new InfoWindow.
-//     var infoWindow = new google.maps.InfoWindow({
-//         content: 'My home in Burnaby'
-//     });
-//     // Opens the InfoWindow when marker is clicked.
-//     marker.addListener('click', function () {
-//         infoWindow.open(map, marker);
-//     });
+// 'use strict';
+// //require method
+// // var hamburger = require('./hamburger');
+// // var flipp = require('./flipper');
+// // var blog = require('./blog');
+
+// //import method
+// import flipp from './flipper_es6';
+// import blog from './blog_es6';
+// import hamburger from './hamburger_es6';
+// import slider from './slider';
+// import initMap from './googleMap';
+
+// if (window.location.pathname == '/about.html') {
+//   google.maps.event.addDomListener(window, 'load', initMap());
 // }
+
+// if (window.location.pathname == '/blog.html') {
+//   blog();
+// }
+
+// // slider();
+
+// document.addEventListener('click', function (ev) {
+//   flipp(ev);
+//   hamburger(ev);
+// }, true);
+
+
+//- script.
+//-   function initMap() {
+//-   var uluru = {lat: 49.230645, lng: -123.010367};
+//-   var map = new google.maps.Map(document.getElementById('map'), {
+//-   zoom: 11,
+//-   scrollwheel: false,
+//-   draggable: false,
+//-   center: uluru
+//-   });
+//-   var marker = new google.maps.Marker({
+//-   position: uluru,
+//-   map: map
+//-   });
+//-   }
+
+//- script(src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyAw0UoLZKCR6RXLa22GntsEQJEq2VYi-Qk" defer)

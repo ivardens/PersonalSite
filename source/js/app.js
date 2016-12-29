@@ -1,26 +1,26 @@
+'use strict';
 
-  'use strict';
-  
-  //import method
-  import flipp from './flipper_es6';
-  import blog from './blog_es6';
-  import hamburger from './hamburger_es6';
-  import slider from './slider';
-  
-  //require method
-  // var hamburger = require('./hamburger');
-  // var flipp = require('./flipper');
-  // var blog = require('./blog');
+//import modules
+import flipp from './flipper_es6';
+import blog from './blog_es6';
+import hamburger from './hamburger_es6';
+import slider from './slider';
+import initMap from './googleMap';
+import skills from './skills';
 
-  // import initMap from './googleMap';
-  // initMap()();
+// load Google Map handler
+if (window.location.pathname == '/about.html') {
+  google.maps.event.addDomListener(window, 'load', initMap());
+  skills.init();
+}
 
+if (window.location.pathname == '/blog.html') {
   blog();
-  // slider();
+}
 
-  document.addEventListener('click', function (ev) {
-    flipp(ev);
-    hamburger(ev);
+// slider();
 
-  }, true);
-
+document.addEventListener('click', function (ev) {
+  flipp(ev);
+  hamburger(ev);
+}, true);
