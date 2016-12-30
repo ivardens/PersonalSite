@@ -5,37 +5,41 @@ export default (function () {
   };
 
   function _setUpListners() {
-    $(window).on('scroll', _scroll);
+    window.addEventListener('scroll', _scroll);
   };
 
   function _scroll(e) {
 
     var
-      // marginTop = margin before block when will start animation
-      marginTop = 150,
-      windowMargin = $(window).scrollTop(),
-      containerTop = $('.skills').offset().top - marginTop;
+    // marginTop = margin before block when animation is started
+      marginTop = 200,
+      blockOffset = document.querySelector('.skills').getBoundingClientRect()['top'];
 
-    if (windowMargin > containerTop) {
+    if (blockOffset < marginTop) {
       _SkillsShow();
     }
   };
 
+  function _perimetr(radius) {
+    return 2 * 3.14159265 * radius;
+  }
+
   function _SkillsShow() {
 
-    var
-      time = 0,
-      delay = 200;
+    var items = document.querySelectorAll('.skills__circle-second');
 
-    $('.skills__circle-second').each(function (index, element) {
-      var _this = this,
-        levelValue = $(element).data('circle'),
-        levelClass = "skills__circle-" + levelValue;
+    Array.prototype.forEach.call(items, function (element, index) {
+      var
+        levelValue = element.dataset['circle'],
+        pause = element.dataset['pause'],
+        radiusCircle = element.getAttribute('r'),
+        strokeDasharray = _perimetr(radiusCircle),
+        strokeDashoffset = strokeDasharray / 100 * levelValue;
 
       setTimeout(function () {
-        _this.classList.add(levelClass);
-
-      }, time += delay);
+        element.style.strokeDasharray = strokeDasharray;
+        element.style.strokeDashoffset = strokeDashoffset;
+      }, pause);
 
     });
   };

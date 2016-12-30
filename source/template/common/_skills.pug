@@ -1,17 +1,48 @@
 -
 	var skills = {
-	  'Frontend' : {'HTML5 JADE vs Pug' : 75, 'CSS3 SCSS PostCSS' : 70, 'JavaScript jQuery' : 60, 'React Redux' : 50},
-	  'Backend' : {'Node.js & npm' : 50, 'Mongo.db' : 50, 'PHP' : 40, 'mySQL' : 40},
-	  'Workflow' : {'Git' : 60, 'Gulp' : 60, 'Webpack' : 50, 'Bower' : 50, 'Heroku' : 50}
+	  'Frontend' : {
+			// skill name : {knowledge level : pause before start animation}
+			'HTML5 JADE vs Pug' : {77:500}, 
+			'CSS3 SCSS PostCSS' : {73:500}, 
+			'JavaScript jQuery' : {61:500}, 
+			'React Redux' 			: {59:500}
+		},
+	  'Backend' : {
+			'Node.js & npm' : {50:1500}, 
+			'Mongo.db' 			: {20:1500}, 
+			'PHP' 					: {20:1500}, 
+			'mySQL' 				: {20:1500}
+		},
+	  'Workflow' : {
+			'Git' 		: {70:2500}, 
+			'Gulp' 		: {80:2500}, 
+			'Webpack' : {50:2500}, 
+			'Bower' 	: {70:2500}, 
+			'Heroku' 	: {50:2500}
+		}
 	}
 	
 each skill__list, skill__title in skills
 	section.skills
-		h3.skills-title.skills__title_h3 #{skill__title}
+		h3.skills__title #{skill__title}
 		ul.skills__list
-			each level, skill__title in skill__list
+			each levels, skill__title in skill__list
 				li.skills__item
 					svg(width="110" height="110").skills__circles
-						circle(r="45" cx="50%" cy="50%" fill="none" class="skills__circle-first")
-						circle(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" data-circle=level class='skills__circle-second')
-					span.skills__title #{skill__title}
+						each pause, level in levels
+							circle(
+								r="45" 
+								cx="50%" 
+								cy="50%" 
+								fill="none" 
+								class="skills__circle-first")
+							
+							circle(
+								r="45" 
+								cx="50%" 
+								cy="50%" 
+								transform="rotate(-90 55 55)" 
+								class="skills__circle-second"
+								data-circle=level 
+								data-pause=pause)
+					span.skills__item-title #{skill__title}
