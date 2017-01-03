@@ -1,95 +1,120 @@
-//- .works-title
-//-   h2 - Blog -
-
-
 aside.blog-titles
   .blog-titles__wrap
     ul.blog-titles__list
       
-      li.blog-titles__item.blog-titles__active Самое важное в SASS
-        //- a(href="#1").blog-titles__link Самое важное в SASS
-      
-      li.blog-titles__item Приёмы в вёрстке, без которых не обходится ни один сайт
-        //- a(href="#2").blog-titles__link Приёмы в вёрстке, без которых не обходится ни один сайт
-      
-      li.blog-titles__item Почему я выбрал Jade
-        //- a(href="#3").blog-titles__link Почему я выбрал Jade
-
-      li.blog-titles__item Приёмы в вёрстке, без которых не обходится ни один сайт
-        //- a(href="#4").blog-titles__link Приёмы в вёрстке, без которых не обходится ни один сайт
+      li.blog-titles__item.blog-titles__active Why i use SASS
+      li.blog-titles__item Why i use Jade (Pug)
+      li.blog-titles__item Why i like JavaScript
+      li.blog-titles__item Why i like React
+      li.blog-titles__item Why i like Gulp
+      li.blog-titles__item Why i like Webpack
       
       .blog-titles__circle
 
 main.blog-articles
   article.blog-article
     .blog-article__title
-        h2(id="1") Самое важное в SASS
+        h2(id="1") Why i use SASS
     .blog-article__info
-        | 22 июня 2016
+        | 12 December 2016
     .blog-article__text
-        p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-        p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+      p  Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+      ul
+        li variables
+        li @import
+        li color function
+        li @mixins
+        li @extend
+
+      
+      code.language-php
+        | //syntax lighten($color, $amount) darken($color, $amount) rgba($color, $alpha)
+
     .blog-article__bottom
 
   article.blog-article
     .blog-article__title
-      h2(id="2") Приёмы в вёрстке, без которых не обходится ни один сайт
+      h2(id="2") Why i use Jade (Pug)
     .blog-article__info
-      | 22 июля 2016
+      | 14 December 2016
     .blog-article__text
-      p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-      p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+      p  Jade is an elegant templating engine, primarily used for server-side templating in NodeJS. In plain words, Jade gives you a powerful new way to write markup, with a number of advantages over plain HTML.
+      ul
+        li Powerful Features and Using JavaScript in Jade
+          ul
+            li Loops
+            li JavaScript
+            li Interpolation
+            li Mixins
+        li Mixins are like functions. They take parameters as input and give markup as output.,
+        li Extends,
+        li You do not need a sophisticated editor to find unmatched closing tags,
+        li No code formater required: indentation reflects nesting,
+        li I cannot live without block append/prepend It is useful for a template hierarchy, e.g.
+        li You can reuse jade templates in other languages
+          ul
+            li scala
+            li php
+            li ruby
+            li python
+            li java
     .blog-article__bottom
   
   article.blog-article
     .blog-article__title
-      h2(id="3") Почему я выбрал Jade
+      h2(id="3") Why i like JavaScript
     .blog-article__info
-      | 22 июля 2016
+      | 16 December 2016
     .blog-article__text
-      <ul>
-        <li>работает на клиентской стороне</li>
-        <li>отличная читабельность</li>
-        <li>гибкая система отступов</li>
-        <li>раскрытие блоков</li>
-        <li>примеси</li>
-        <li>статические инклюды</li>
-        <li>интерполяция в аттрибутах</li>
-        <li>из соображений безопасности по умолчанию все экранируется</li>
-        <li>контекстные сообщения об ошибках как во время компиляции так и во время выполнения</li>
-        <li>утилита для компиляции jade в html из командной строки</li>
-        <li>режим HTML5 (используйте doctype <em>!!! 5</em>)</li>
-        <li>кеширование в памяти (опционально)</li>
-        <li>комбинирование динамических и статических CSS-классов</li>
-        <li>манипуляции с деревом парсинга через <em>filters</em></li>
-        <li>поддержка <a href="http://express-js.ru">Express JS</a> “из коробки”</li>
-        <li>прозрачный механизм итерации по объектам, массивам, и даже неисчислимым типам через <code class="highlighter-rouge">each</code></li>
-        <li>блочные комментарии</li>
-        <li>фильтры AST</li>
-        <li>фильтры
-          <ul>
-            <li>:sass - нужно установить <a href="http://github.com/visionmedia/sass.js">sass.js</a></li>
-            <li>:less - нужно установить <a href="http://github.com/cloudhead/less.js">less.js</a></li>
-            <li>:markdown - нужно установить <a href="http://github.com/evilstreak/markdown-js">markdown-js</a> или <a href="http://github.com/visionmedia/node-discount">node-discount</a></li>
-          </ul>
-        </li>
-        <li><a href="https://github.com/digitaltoad/vim-jade">подсветка синтаксиса для Vim</a></li>
-        <li><a href="http://github.com/miksago/jade-tmbundle">TextMate Bundle</a></li>
-        <li><a href="http://tjholowaychuk.com/post/1004255394/jade-screencast-template-engine-for-nodejs">скринкасты</a></li>
-        <li><a href="https://github.com/donpark/html2jade">html2jade конвертер</a></li>
-      </ul>
+      p  JavaScript is very popular language in 2017. You can use it on front-end end back-end (NodeJS).
+      ul
+        li Loose Typing. It has benefits, much greater expressive power, often programs tend to be easier to write.
+        li Objects as general containers. Brilliant idea, unification of objects and hash tables, objects are completely dynamic things in which new members and new methods could be added at any time.
+        li Objects can be augmented. You can take an existing object and add new stuff to it at any time — new members, new methods. And we do it simply be assignment. We don’t need to make a new class (in fact there are no classes).
+        li One of the really powerful things in JavaScript is that we can extend the built-in types. We can extend all objects at once by assigning to Object.prototype or we can enhance all arrays by assigning to Array.prototype.
+        li Prototypal inheritance. Really distinct from classical inheritance, objects inherit directly from other objects, there are no classes, powerful idea, not commonly understood very well.
+        li Lambda. The next powerful idea — the use of functions as first class objects. Functions can be passed, returned and stored just like any other value — this turns out to be really-really powerful and important. What JavaScript calls function, other languages call lambda. It is a source of enormous expressive power.
+        li Inner functions. Functions do not have to be defined at the top level. Functions can be defined inside of other functions. That turns out to be a really useful thing.
+        li Static Scoping or Lexical Scoping. An inner function has access to the variables and parameters of functions that it is contained within.
+        li Closure. The scope that an inner function enjoys continues even after the parent function have returned. The #1 really powerful feature in JavaScript.
     .blog-article__bottom
-
 
   article.blog-article
     .blog-article__title
-      h2(id="4") Приёмы в вёрстке, без которых не обходится ни один сайт
+      h2(id="4") Why i like React
     .blog-article__info
-      | 22 июля 2016
+      | 18 December 2016
     .blog-article__text
-      p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-      p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+      p React is javascript library for building user interfaces.
+      ul
+        li It makes writing Javascript easier. React uses a special syntax called JSX, which allows you to mix HTML with JavaScript. This is not a requirement – you can still write in plain JavaScript – but I strongly suggest that you try the new syntax because makes writing your components a breeze.
+        li Components are the future of web development. React doesn't use Shadow DOM – instead it gives you the ability to create your own components that you can later reuse, combine, and nest to your heart’s content. I've found this to be the single-biggest productivity boost because it’s so easy to define and manipulate your own components.
+        li React is extremely efficient. React creates its own virtual DOM where your components actually live. This approach gives you enormous flexibility and amazing gains in performance because React calculates what changes need to be made in the DOM beforehand and updates the DOM tree accordingly.
+        li It's awesome for SEO. One of the biggest issues with JavaScript frameworks is that they are not exactly search engine friendly. Although there have been some improvements in this area, search engines generally have trouble reading JavaScript-heavy applications. React stands out from the crowd because you can run React on the server, and the virtual DOM will be rendered and returned to the browser as a regular web page. No need for PhantomJS and other tricks!      
+        li It gives you out-of-the-box developer tools. When you start your adventure with React, don't forget to install the official React Chrome extension. It makes debugging your app so much easier. After you install the extension, you'll have a direct look into the virtual DOM just as if you were browsing a regular DOM tree in the elements panel. Pretty amazing!
+        li Mobile Apps using React Native. Once you get comfortable with building web application with React, you can easily switch to building mobile application using React Native. Though it is not directly related to React, React Native follows same design patterns, making the transition easier!
+    .blog-article__bottom
+
+  article.blog-article
+    .blog-article__title
+      h2(id="4") Why i like Gulp
+    .blog-article__info
+      | 20 December 2016
+    .blog-article__text
+      p  Gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.
+      ul
+        li Simple Usage. By preferring code over configuration, node best practices, and a minimal API surface - gulp makes things simple like never before
+        li Efficient Builds. Using the power of node streams, gulp gives you fast builds that don't write intermediary files to disk.
+        li Quality Ecosystem. By enforcing strict guidelines, we ensure our plugins stay simple and work as expected.
     .blog-article__bottom
   
-  
+  article.blog-article
+    .blog-article__title
+      h2(id="4") Why i like Webpack
+    .blog-article__info
+      | 20 December 2016
+    .blog-article__text
+      p  Webpack is a tool to build JavaScript modules in your application. Webpack simplifies your workflow by quickly constructing a dependency graph of your application and bundling them in the right order. webpack can be configured to customise optimisations to your code, to split vendor/css/js code for production, run a development server that hot-reloads your code without page refresh and many such cool features.
+    .blog-article__bottom
+
   a(href="#next").totop ^^^

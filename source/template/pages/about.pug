@@ -40,20 +40,20 @@ block content
           div#map
 
           .contact-form
-              h2.contact-form__title - Контакты -
+              h2.contact-form__title - Contacts -
               ul.contact-form__list
                 li.contact-form__item.skype 
                   svg(class="svg-skype-dims")
                     use(xlink:href="./assets/img/sprite.svg#skype" class="header-text-background-color")
-                  span.contact-form__text varden-adams
+                  a(href="skype:varden-adams?call" alt="Skype").contact-form__text varden-adams
                 li.contact-form__item.mail 
                   svg(class="svg-envelope-dims")
                     use(xlink:href="./assets/img/sprite.svg#envelope" class="header-text-background-color")
-                  span.contact-form__text varden.adams@gmail.com
+                  a(href="mailto:varden.adams@gmail.com" alt="E-Mail").contact-form__text varden.adams@gmail.com
                 li.contact-form__item.phone 
                   svg(class="svg-phone-dims")
                     use(xlink:href="./assets/img/sprite.svg#phone" class="header-text-background-color")
-                  span.contact-form__text +1 604 3602807
+                  a(href="skype:+16043602807?call" alt="Phone").contact-form__text +1 604 3602807
                 li.contact-form__item.addres 
                   svg(class="svg-map_marker-dims")
                     use(xlink:href="./assets/img/sprite.svg#map_marker" class="header-text-background-color")

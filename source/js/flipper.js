@@ -12,6 +12,7 @@ var flipper = function (ev) {
     } else {
       tagName === 'BODY' ||
         className === 'login-btn' ||
+        className === 'flip-back__back' ||
         className === 'login-block' ||
         className === 'container' ||
         className === 'login-content' ||

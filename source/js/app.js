@@ -4,14 +4,14 @@
 import flipp from './flipper_es6';
 import blog from './blog_es6';
 import hamburger from './hamburger_es6';
-import slider from './slider';
+// import slider from './slider';
 import initMap from './googleMap';
 import skills from './skills';
 
-// load Google Map handler
+// Google Map and skills handler
 if (window.location.pathname == '/about.html') {
   google.maps.event.addDomListener(window, 'load', initMap());
-  skills.init();
+  skills();
 }
 
 if (window.location.pathname == '/blog.html') {

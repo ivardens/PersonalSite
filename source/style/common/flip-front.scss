@@ -1,11 +1,9 @@
 .flip-front {
-
   &__wrapper {
     display: flex;
     flex-direction: column;
     height: inherit;
   }
-
   &__foto-block {
     flex: 1 1 auto;
     & .foto-img {
@@ -22,10 +20,8 @@
       color: $flip-front_font_color;
     }
   }
-
   &__social-block {
     text-align: center;
-    
     & .svg-icon {
       fill: $flip-front_social_color;
     }
@@ -33,21 +29,21 @@
       fill: $flip-front_social_color_hover;
     }
   }
-
   &__navigation-block {
     display: flex;
     height: aoto;
     background: rgba($flip-front_btn_color, .6);
+    border-radius: 0 0 .5rem .5rem;
   }
   &__btn {
     display: block;
     color: $flip-front_btn_text_color;
     flex: 1 0 auto;
     text-align: center;
-  }
-  &__btn:nth-child(2) {
-    border-left: 2px solid rgba($flip-front_btn_border_color, .7);
     border-right: 2px solid rgba($flip-front_btn_border_color, .7);
+  }
+  &__btn:last-child {
+    border-right: 0px;
   }
   &__btn:first-letter {
     text-transform: uppercase;

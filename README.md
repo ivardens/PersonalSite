@@ -37,4 +37,4 @@ git remote add origin https://github.com/ivarden/PersonalSite.git
 git push -u origin master
 ```
 
-Version for testing : http://
+Version for testing : [https://ivarden.github.io/mysite.github.io/](https://ivarden.github.io/mysite.github.io/)

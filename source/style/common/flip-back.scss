@@ -73,14 +73,17 @@
     align-self: flex-end;
     display: flex;
     background: rgba($flip-front_btn_color, .6);
+    border-radius: 0 0 .5rem .5rem;
   }
   &__btn {
+    display: block;
     color: $flip-front_btn_text_color;
     flex: 1 0 auto;
     text-align: center;
-  }
-  &__btn:nth-child(1) {
     border-right: 2px solid rgba($flip-front_btn_border_color, .7);
+  }
+  &__btn:last-child {
+    border-right: 0px;
   }
   &__btn:first-letter {
     text-transform: uppercase;
@@ -89,7 +92,7 @@
     background: rgba($flip-front_btn_color_hover, .5);
     cursor: pointer;
   }
-  &__btn a, 
+  &__btn a,
   &__btn button {
     display: block;
     padding: 1rem;
@@ -105,9 +108,11 @@
     margin: 0 auto;
   }
 }
+
 .icon-color {
-      fill: $flip-front_social_color;
-    }
+  fill: $flip-front_social_color;
+}
+
 .icon-color:hover {
-      fill: $flip-front_social_color_hover;
-    }
+  fill: $flip-front_social_color_hover;
+}

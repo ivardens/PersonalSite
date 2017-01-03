@@ -19,18 +19,18 @@
     
     .flip-back__checkbox
       input(type="checkbox" name="human" id="check" value="yes")
-      label(for="check") Я человек
+      label(for="check") I am human
 
-    .span.flip-back__text Вы точно не робот?
+    .span.flip-back__text You're not exactly a robot?
     
     .flip-back__radio
       input(type="radio" name="human" id="human1" value="yes").flip-back__radio-input
-      label(for="human1").flip-back__radio-label Да
+      label(for="human1").flip-back__radio-label Yes
       input(type="radio" name="human" id="human2" value="no") 
-      label(for="human2") Не уверен    
+      label(for="human2") Not sure    
 
   .flip-back__navigation-block
+    .flip-back__btn.flip-back__back 
+      a(href="./about.html" title="About me") About me
     .flip-back__btn 
-      a(href="./index.html" title="На главную") На главную
-    .flip-back__btn 
-      button( value="Войти").flip-back__submit Войти
+      button( value="Войти").flip-back__submit Input
